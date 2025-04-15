@@ -10,7 +10,10 @@ class testpalindrome (unittest.TestCase):
         self.assertTrue(is_palindrome("La ruta natural"))
         self.assertTrue(is_palindrome("Amo la pacífica paloma"))
         self.assertTrue(is_palindrome("La ruta natural"))
-
+    def test_frases_no_palindrome(self):
+        self.assertFalse(is_palindrome("La ruta no es natural"))
+        self.assertFalse(is_palindrome("escribir un texto "))
+        self.assertFalse(is_palindrome(" me gusta la computadora "))
 
 
 if __name__ == '__main__':
